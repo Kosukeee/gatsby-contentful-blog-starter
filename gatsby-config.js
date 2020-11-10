@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `My Awesome Blog`,
+    description: `An awesome blog displaying my awesome posts.`,
+    author: `Kosuke`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -25,6 +25,13 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `2wno6uedwzs4`,
+        accessToken: `n0QaLol_Ke8i1ShqrjXduIANOb0YW3DtBCOTa4KApIs`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
