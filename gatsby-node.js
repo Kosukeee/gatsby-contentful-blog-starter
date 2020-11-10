@@ -7,7 +7,7 @@
 // You can delete this file if you're not using it
 
 const path = require("path")
-const splash = require("splash")
+const slash = require("slash")
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions

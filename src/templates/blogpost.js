@@ -36,7 +36,7 @@ export const pageQuery = graphql`
       body {
         body
       }
-      image {
+      heroImage {
         file {
           url
         }

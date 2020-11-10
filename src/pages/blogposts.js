@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const BlogPosts; = () => {
+const BlogPosts = ({ data }) => {
   const blogPosts = data.allContentfulBlogPost.edges
 
   return (
@@ -21,10 +21,10 @@ const BlogPosts; = () => {
         <Link to="/">Go back to the homepage</Link>
       </div>
     </Layout>
-  );
-};
+  )
+}
 
-export default BlogPosts;
+export default BlogPosts
 
 export const query = graphql`
   query BlogPostsPageQuery {
@@ -37,7 +37,7 @@ export const query = graphql`
           body {
             body
           }
-          image {
+          heroImage {
             file {
               url
             }
@@ -47,4 +47,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`
